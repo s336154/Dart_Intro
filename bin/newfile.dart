@@ -150,6 +150,13 @@ findVolume2(2, breadth: 3, heigth: 4);
     print('\nException handled');
   }
 
+  //Handling differnt exceptions
+  try {
+    int integerdivision = 4 ~/ 0;
+    print('\nResult is $integerdivision');
+  } catch(e){
+    print('\nThe Exception thrown is $e');
+  }
   }
 
 int getArea(int length, int breadth){
