@@ -157,6 +157,16 @@ findVolume2(2, breadth: 3, heigth: 4);
   } catch(e){
     print('\nThe Exception thrown is $e');
   }
+
+  //Stack Trace to know events happened before exception thrown
+  try {
+    int integerdivision = 4 ~/ 0;
+    print('\nResult is $integerdivision');
+  } catch(e,s){
+    print('\nThe Exception thrown is $e');
+    print('\nStack Trace \n $s');
+  }
+
   }
 
 int getArea(int length, int breadth){
