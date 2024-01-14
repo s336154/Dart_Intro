@@ -140,7 +140,7 @@ List planteList = ["Mercury","Venus", "Earth", "Mars"];
   print('\nRectangle area is $rectArea');
 
   findPerimeter2(4, 6);
-
+findVolume2(2, breadth: 3, heigth: 4);
 
   }
 
@@ -156,8 +156,15 @@ void findPerimeter2(int length, int breadth) =>
 int getArea2(int length, int breadth) => length*breadth;
 
 //Default parameters
-int findVolume(int length, {int breadth = 10, int heigth = 8} ) {
-  return length*breadth*heigth;
+void findVolume2(int length, {int breadth = 4, int heigth = 5} ) {
+
+  print('\nLength is $length');
+  print('Breadth is $breadth');
+  print('Heigth is $heigth');
+
+  print('\nVolume is ${(length*breadth*heigth)}');
+
+  //  return length*breadth*heigth;
 }
 
 /*
