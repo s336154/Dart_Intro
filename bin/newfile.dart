@@ -167,6 +167,17 @@ findVolume2(2, breadth: 3, heigth: 4);
     print('\nStack Trace \n $s');
   }
 
+
+  // This finally clause will always anyways be executed
+  try {
+    int integerdivision = 4 ~/ 0;
+    print('\nResult is $integerdivision');
+  } catch(e){
+    print('\nThe Exception thrown is $e');
+  } finally {
+    print('The finally clause is always executed!')
+  }
+
   }
 
 int getArea(int length, int breadth){
