@@ -141,6 +141,7 @@ List planteList = ["Mercury","Venus", "Earth", "Mars"];
 
   findPerimeter2(4, 6);
 
+
   }
 
 int getArea(int length, int breadth){
@@ -153,6 +154,30 @@ void findPerimeter2(int length, int breadth) =>
     print('\nThe second perimeter is ${(2* (length+breadth))}');
 
 int getArea2(int length, int breadth) => length*breadth;
+
+//Default parameters
+int findVolume(int length, {int breadth = 10, int heigth = 8} ) {
+  return length*breadth*heigth;
+}
+
+/*
+//Named parameters
+int findVolume(int length, {int breadth, int heigth} ) {
+  return length*breadth*heigth;
+}
+
+
+
+// Optional parameters
+void printCities(String name1, [String name2, String name3] ){
+
+  print('Name 1 is $name1');
+  print('Name 2 is $name2');
+  print('Name 3 is $name3');
+
+}
+
+ */
 
 
 void findPerimeter(int length, int breadth) {
