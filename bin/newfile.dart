@@ -136,8 +136,10 @@ List planteList = ["Mercury","Venus", "Earth", "Mars"];
 
   findPerimeter(length, breadth);
 
-  int rectArea = getArea(3, 5);
+  int rectArea = getArea2(3, 5);
   print('\nRectangle area is $rectArea');
+
+  findPerimeter2(4, 6);
 
   }
 
@@ -147,10 +149,13 @@ int getArea(int length, int breadth){
   return area;
 }
 
+void findPerimeter2(int length, int breadth) =>
+    print('\nThe second perimeter is ${(2* (length+breadth))}');
+
+int getArea2(int length, int breadth) => length*breadth;
+
 
 void findPerimeter(int length, int breadth) {
-
-
 
   int perimeter = 2 * (length + breadth);
   print('\nThe perimeter is $perimeter');
