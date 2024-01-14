@@ -131,12 +131,30 @@ List planteList = ["Mercury","Venus", "Earth", "Mars"];
       }
     }
 
+  int length = 4;
+  int breadth = 2;
+
+  findPerimeter(length, breadth);
+
+  int rectArea = getArea(3, 5);
+  print('\nRectangle area is $rectArea');
+
   }
 
+int getArea(int length, int breadth){
+
+  int area = length*breadth;
+  return area;
+}
+
+
+void findPerimeter(int length, int breadth) {
 
 
 
-
+  int perimeter = 2 * (length + breadth);
+  print('\nThe perimeter is $perimeter');
+}
 class Circle {
 
   final num = 23;
