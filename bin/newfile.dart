@@ -142,6 +142,14 @@ List planteList = ["Mercury","Venus", "Earth", "Mars"];
   findPerimeter2(4, 6);
 findVolume2(2, breadth: 3, heigth: 4);
 
+// special character for division
+  try {
+    int integerdivision = 4 ~/ 2;
+    print('\nResult is $integerdivision');
+  } on UnsupportedError{
+    print('\nException handled');
+  }
+
   }
 
 int getArea(int length, int breadth){
